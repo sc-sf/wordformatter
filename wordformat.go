@@ -8,7 +8,7 @@ import (
 func main() {
 	arrays := []*string{}
 	str := "This is a sample text but a complicated problem to be solved, " +
-		"so we are adding more text to see that it actually works thoughhhh."
+		"so we are adding more text to see that it actually works."
 	wordformat(str, arrays)
 	//printArrays(arrays)
 }
