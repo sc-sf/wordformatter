@@ -9,19 +9,18 @@ func main() {
 	arrays := []*string{}
 	str := "This is a sample text but a complicated problem to be solved, " +
 		"so we are adding more text to see that it actually works."
+
 	wordformat(str, arrays)
-	//printArrays(arrays)
 }
 
 func wordformat(s string, arrays []*string) {
 	const space string = " "
+	const pageWidth int = 20
 	start := 0
 	end := 0
 	var subs string
 	length, newSpaces, currentSpaces := 0, 0, 0
 	tokens := []string{}
-	const pageWidth int = 20
-
 	getSpace := map[int]string{0: "", 1: " ", 2: "  ", 3: "   ", 4: "    ", 5: "     ", 6: "      "}
 
 	// Loops through the input paragraph and break it down into a number of substrings
