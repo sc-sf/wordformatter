@@ -24,7 +24,7 @@ func wordformat(s string, arrays []*string) {
 	getSpace := map[int]string{0: "", 1: " ", 2: "  ", 3: "   ", 4: "    ", 5: "     ", 6: "      "}
 
 	// Loops through the input paragraph and break it down into a number of substrings
-	// that are each less than or equal to 20 in length without breaking any words
+	// that are each less than or equal to 20 in length without breaking any words.
 	for len(s) > 0 {
 		if (start + 21) > len(s) { // Handles the last substring of paragraph
 			end = len(s)
